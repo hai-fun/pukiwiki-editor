@@ -3,7 +3,7 @@ const fetchPreview = () => {
     const body = serializeForm();
     $.ajax({
       type: "POST",
-      url: "https://ppwww.phys.sci.kobe-u.ac.jp/ppwiki-internal/",
+      url: location.href.replace(/\#.*$/, '').replace(/\?.*$/, ''),
       data: body,
       headers: {
         Accept:

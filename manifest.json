@@ -15,7 +15,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://ppwww.phys.sci.kobe-u.ac.jp/*?cmd=edit*"],
+      "matches": ["https://*/*?cmd=edit*"],
       "css": ["style.css"],
       "js": [
         "packages/jquery-3.6.0.min.js",
